@@ -59,3 +59,23 @@ foo ==mark me==
 .
 <p><mark><a href="/">hello</a></mark></p>
 ````````````````````````````````
+
+## mark and code span
+
+```````````````````````````````` example
+==mark `code` me==
+.
+<p><mark>mark <code>code</code> me</mark></p>
+````````````````````````````````
+
+```````````````````````````````` example
+==mark `a==b` me==
+.
+<p><mark>mark <code>a==b</code> me</mark></p>
+````````````````````````````````
+
+```````````````````````````````` example
+==`a==b`==
+.
+<p><mark><code>a==b</code></mark></p>
+````````````````````````````````

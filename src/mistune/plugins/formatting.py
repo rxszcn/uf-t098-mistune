@@ -63,7 +63,7 @@ def _parse_to_end(
     if state.depth >= inline.max_nested_level:
         return None
     pos = m.end()
-    close = state.delimiters.find(marker, pos, formatting=True)
+    close = state.delimiters.formatting_end(inline, state, marker, pos)
     if close is None:
         return None
     end_pos = close + len(marker)

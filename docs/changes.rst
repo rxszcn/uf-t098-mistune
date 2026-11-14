@@ -6,6 +6,9 @@ Here is the full history of mistune v3.
 Unreleased
 ----------
 
+* Keep strikethrough, mark, and insert markers that are written inside a code
+  span literal, so the outer formatting stays intact instead of closing early
+  at the code span's content.
 * Use the language name from the fence info string in the Pygments renderer
   example, allowing additional metadata after it.
 * Require Python 3.11 or later; remove Python 3.10 support.
